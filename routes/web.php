@@ -20,5 +20,5 @@ Route::get('/login', [LoginController::class, 'login']);
 Route::post('/login', [LoginController::class, 'auth']);
 Route::get('/Inventory', [InventoryController::class, 'Inv']);
 Route::get('/main', [MainController::class, 'mainlmao']);
-Route::get('/categories', 'App\Http\Controllers\CategoryController@index');
+Route::get('/categories',[CategoryController::class,'index']);
 
